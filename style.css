@@ -1,3 +1,6 @@
+body {
+  background-color: #a6abad;
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +9,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  background-color: #a6abad;
   display: block;
-  margin: 0px;
+  margin: 8px;
 }
 section {
   display: block;
@@ -45,11 +47,13 @@ main {
   padding: 1rem;
 }
 .name {
-  color: white;
   font-size: 1.2rem;
   font-weight: 700;
+  color: white;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
 }
 .designation {
   font-size: 1rem;
@@ -108,6 +112,16 @@ main {
 }
 @media only screen and (max-width: 630px) {
   .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and(max-width:360px) {
+  .left-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and(max-width:360px) {
+  .right-section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
